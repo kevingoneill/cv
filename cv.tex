@@ -1,32 +1,41 @@
 %%% ADD ORCID ID
-
 \documentclass[margin]{res}
 \setlength{\textwidth}{5.1in}
 
+\usepackage[style=apa, bibencoding=utf8]{biblatex}
 \usepackage{hyperref}
+
+\addbibresource{papers.bib}
+\addbibresource{conference-papers.bib}
 
 \renewcommand{\labelitemi}{$-$}
 
 \begin{document}
 \strut\hspace{-3.5cm}{\centering\huge\bf Kevin G. O'Neill} \hfill\vspace{-.25cm}
 \begin{tabular}{r r}
-\href{mailto:kevin.oneill@duke.edu}{kevin.oneill@duke.edu} \\
-(267) 377-9085
+  \textbf{September 2019}\\
+  \href{mailto:kevin.oneill@duke.edu}{kevin.oneill@duke.edu} \\
+  (267) 377-9085
 \end{tabular}
 
-\strut\hspace{-3.5cm}\vbox{\hrule width\resumewidth height 1pt}
+\strut\hspace{-3.5cm}\vbox{\hrule width .99\resumewidth height 1pt}
 
 \begin{resume} 
   %\section{Objective} 
-  %Aspiring cognitive scientist seeking a place in the Psychology
-  %graduate program at Harvard University.
+  %
+  %
   
   \section{Education}
   \textbf{Duke University} \hfill Fall 2018 - Present \\
-  \emph{PhD,} Cognitive Neuroscience \hfill
+  \emph{PhD,} Cognitive Neuroscience \hfill \\
+  \href{https://felipedebrigard.com}{Imagination and Modal Cognition Laboratory}
+  --- Dr. Felipe De Brigard \\
+  \href{https://pearsonlab.github.io}{Pearson Laboratory} --- Dr. John Pearson
   
   \textbf{Rensselaer Polytechnic Institute} \hfill Class of 2017 \\
-  \emph{Bachelor of Science,} Cognitive Science and Computer Science \hfill GPA: 3.97
+  \emph{Bachelor of Science,} Cognitive Science and Computer Science \hfill GPA: 3.97 \\
+
+
   
   \section{Experience}
   \textbf{Computer Scientist} \hfill Summer 2017 - Present \\
@@ -35,45 +44,51 @@
   
   \textbf{Undergraduate Researcher} \hfill Spring 2015 - Spring 2017 \\
   Rensselaer Artificial Intelligence and Reasoning \\
-  (RAIR) Laboratory --- Dr. Selmer Bringsjord
+  \href{https://rair.cogsci.rpi.edu/}{(RAIR) Laboratory} --- Dr. Selmer Bringsjord
   
   \textbf{Federal Work Study} \hfill Fall 2014 - Spring 2017 \\
-  Rensselaer Cognitive Science Department
+  Rensselaer Cognitive Science Department \\
 
+
+  
   \section{Journal\\Papers}
-  \input{papers.tex}
+  \input{papers} \\
   
   \section{Conference\\Papers}
-  \input{conference-papers.tex}
+  \input{conference-papers.tex} \\
   
   \section{Presentations}
-  \input{presentations.tex}
+  \input{presentations} \\
   
   
   \section{Projects}
-  \textbf{ARCADIA} A computational framework for attention-centered cognitive modeling.
+  \href{https://github.com/pearsonlab/SpikingNeuralNets.jl}{\textbf{SpikingNeuralNets.jl}} \\
+  A flexible system for simulating arbitrary systems of spiking neural networks.
+
+  \textbf{ARCADIA} \\
+  A computational framework for attention-centered cognitive modeling.
   
-  \textbf{MetaProver} (\url{https://github.com/kevingoneill/MetaProver})
+  \href{https://github.com/kevingoneill/MetaProver}{\textbf{MetaProver}}
   \\ A framework for automated logical and meta-logical reasoning via
   analytic tableaux
 
-  \textbf{OSCAR} (\url{http://rair.cogsci.rpi.edu/projects/automated-reasoners/oscar/}) \\
-  A restoration of John Pollock's nonmonotonic natural deduction theorem prover
+  \href{http://rair.cogsci.rpi.edu/projects/automated-reasoners/oscar/}{\textbf{OSCAR}} \\
+  A restoration of John Pollock's nonmonotonic natural deduction theorem prover \\
   
   \section{Awards/\\Honors}
   NSF GRFP Honorable Mention \hfill Spring 2019 \\
   Chancellors Scholars Fellowship \hfill Fall 2018 \\
   Rensselaer Leadership Award \hfill Fall 2014 - Spring 2017 \\
   Mona \& Edward Zander '68 Scholarship \hfill Fall 2014 - Spring 2017 \\
-  Dean's List/Dean's Honor List \hfill Fall 2014 - Spring 2017
+  Dean's List/Dean's Honor List \hfill Fall 2014 - Spring 2017 \\
 
   \section{Skills}
   \begin{itemize}
-  \item Java, Python, R, C/C++, Clojure/Lisp, Julia, Javascript, Prolog, Unix, Git
+  \item Python, R, C/C++, Java, Clojure/Lisp, Julia, Javascript, Prolog, Unix, Git
   \item Software development, verification, and visualization
-  \item Artificial Intelligence (Cognitive Modeling, NLP, ML, Logicist)
+  \item Mixed-effect modeling and Bayesian statistics
+  \item Artificial Intelligence (Cognitive Modeling, ML, Symbolic AI, NLP)
   \item Parallel/High-Performance Computing
-  \item Experimental research and statistical analysis
   \end{itemize}
 \end{resume}
 \end{document}
