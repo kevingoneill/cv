@@ -1,8 +1,8 @@
-%%% ADD ORCID ID
 \documentclass[margin]{res}
 \setlength{\textwidth}{5.1in}
 
 \usepackage[style=apa, backend=biber, bibencoding=utf8]{biblatex}
+\usepackage{graphicx}
 \usepackage{hyperref}
 
 \addbibresource{papers.bib}
@@ -11,12 +11,16 @@
 \renewcommand{\labelitemi}{$-$}
 \renewcommand{\line}{\vspace{-0.33cm}\strut\hspace{-3.5cm}\vbox{\hrule width .99\resumewidth height 1pt}\vspace{-0.33cm}}
 
+%% ORCID ID
+\newcommand{\orcid}[1]{\href{https://orcid.org/#1}{\raisebox{-0.15\totalheight}{\includegraphics[width=8pt]{img/orcid.png}} #1}}
+
 \begin{document}
 \strut\hspace{-3.5cm}{\centering\huge\bf Kevin G. O'Neill} \hfill\vspace{-.25cm}
-\begin{tabular}{r r}
+\begin{tabular}{r}
   \textbf{August 2020}\\
   \href{mailto:kevin.oneill@duke.edu}{kevin.oneill@duke.edu} \\
-  (267) 377-9085
+  (267) 377-9085 \\
+  \orcid{0000-0001-7401-9802}
 \end{tabular}
 
 \begin{resume} \line
