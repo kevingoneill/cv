@@ -6,6 +6,14 @@
 \usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue, anchorcolor=blue]{hyperref}
 \usepackage{multicol}
 
+\renewcommand*{\mkbibnamegiven}[1]{%
+  \ifitemannotation{bold}{\textbf{#1}}{#1}%%           add bold for my name
+  \ifitemannotation{equal}{\textsuperscript{*}}{}}%%   add astericks for equal contribution
+\renewcommand*{\mkbibnamefamily}[1]{%
+  \ifitemannotation{bold}{\textbf{#1}}{#1}}%%          add bold for my name
+
+
+
 \addbibresource{papers.bib}
 \addbibresource{conference-papers.bib}
 
