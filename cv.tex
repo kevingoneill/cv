@@ -1,5 +1,6 @@
 \documentclass[margin]{res}
 \setlength{\textwidth}{5.1in}
+\pagenumbering{arabic}
 
 \usepackage[style=apa, backend=biber, bibencoding=utf8]{biblatex}
 \usepackage{graphicx}
@@ -71,7 +72,7 @@
   
   \line\input{conference-papers}
   
-  \line\input{presentations}
+  \line\clearpage\input{presentations}
 
   \line\clearpage
   \input{teaching}
