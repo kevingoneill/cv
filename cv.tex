@@ -24,10 +24,16 @@
 
 \newcommand{\imglink}[2]{\href{#2}{\raisebox{-0.15\totalheight}{\includegraphics[width=8pt]{img/#1.png}}}}
 
+
+%% Fonts
+%%\renewcommand*\familydefault{\sfdefault}
+\usepackage{cmbright}
+
 \begin{document}
-\strut\hspace{-3.5cm}{\centering\Huge\bf Kevin G. O'Neill, Ph.D.} \hfill\vspace{-.5cm}
+\strut\hspace{-3.5cm}\raisebox{-\totalheight}{\centering\Huge\bf Kevin G. O'Neill, Ph.D.}
+\hfill\vspace{-.5cm}
 \begin{tabular}{r}
-  \textbf{February 2025}\\
+  \textbf{April 2025}\\
   \href{mailto:kevin.o'neill@ucl.ac.uk}{kevin.o'neill@ucl.ac.uk} \\
   \href{https://kevingoneill.github.io}{kevingoneill.github.io} \\
   \orcid{0000-0001-7401-9802}
@@ -72,48 +78,50 @@
   
   \line\input{conference-papers}
   
-  \line\clearpage\input{presentations}
+  \line\input{presentations}
 
-  \line\clearpage
-  \input{teaching}
+  \line\input{teaching}
 
   \line\section{Mentorship}
+  \textbf{Kaylee Miceli, Nina Van Rooy} \hfill 2024 \\
+  \emph{Causation on a continuum: no normality effects on causal judgments} \\
+  Duke University
+  
   \textbf{Morgan Biele} \hfill 2022 \\
-  \emph{Mental Images Guide Counterfactual and Causal Thinking across Development} \\
+  \emph{Mental images guide counterfactual and causal thinking across development} \\
   Duke University
 
   \textbf{Sara Rose Shannon} \hfill 2022 \\
-  \emph{Assessing the Plausibility of Unconscious Arithmetic} \\
+  \emph{Assessing the plausibility of unconscious arithmetic} \\
   Duke University
   
   \textbf{Mya Harris, Anthony Salgado} \hfill 2022 \\
-  \emph{The Memory Basis of Norm Effects on Causal Judgment} \\
+  \emph{The memory basis of norm effects on causal judgment} \\
   Duke University
   
   \textbf{Yuleika Martinez Castillo} \hfill 2022 \\
-  \emph{R for Data Science} \\
+  \emph{R for data science} \\
   Duke University
 
   \textbf{Gabriela Fern\'{a}ndez Miranda} \hfill 2021-2022 \\
-  \emph{Memory, Forgiveness, and Future Thinking} \\
+  \emph{Memory, forgiveness, and future thinking} \\
   Duke University
   
   \textbf{Ari Khoudary} \hfill 2020-2021 \\
-  \emph{A Functional Neuroimaging Investigation of Moral Foundations Theory} \\
+  \emph{A functional neuroimaging investigation of moral foundations theory} \\
   Duke University
 
   \textbf{Jason Chen, Corey Elowski, Ari Khoudary, Cambria Revsine} \hfill 2020 \\
-  \emph{Predicting fMRI Responses: a Machine Learning Approach} \\
+  \emph{Predicting fMRI responses: a machine learning approach} \\
   Neuromatch Academy
   
   \textbf{Georgia Hadjis, Anna Dorokhova,} \hfill 2020 \\
   \textbf{Alex Vargas, Wen Jian, Sarah Hanson} \\
-  \emph{Predicting Social Task Performance and Brain Activities Based on Emotional Task and Relational Task: an Analysis of the HCP Dataset} \\
+  \emph{Predicting social task performance and brain activities
+  based on emotional task and relational task: an analysis of the HCP dataset} \\
   Neuromatch Academy
   
-  \line\clearpage
-
-  \section{Awards/\\Honors}
+  \line\section{Awards/\\Honors}
   Charles Lafitte Foundation Graduate Travel Award \hfill 2024 \\
   Duke IBRC Research Mini-Grant \hfill 2022 \\
   Cognitive Science Society Student Travel Grant \hfill 2022 \\
@@ -136,12 +144,12 @@
 
   \line\section{Skills}
   \textbf{Programming} \\
-  R, Stan, Python, HTML/CSS, Javascript, Julia, MATLAB, Unix, Git, \LaTeX  \\
+  R, Stan, Python, HTML/CSS/Javascript, Julia, MATLAB, Unix, Git, \LaTeX  \\
   \textbf{Data Collection/Analysis} \\
   Behavioral, fMRI, eye tracking data \\
   Mixed-effect modeling, Bayesian statistics, multivariate statistics \\
-  \textbf{Artificial Intelligence}\\
-  Cognitive modeling, ML, Symbolic AI, NLP, Parallel/High-Performance Computing\\
+  \textbf{Computation}\\
+  Cognitive modeling, ML, symbolic AI, NLP, Parallel/High-Performance Computing\\
   \textbf{Software Engineering} \\
   Software development, verification, and visualization \\
   \textbf{Languages} \\
@@ -153,9 +161,11 @@
   %\end{itemize}
 
   \line\section{Service}
+  \textbf{\href{https://www.ucl.ac.uk/pals/behavioural-data-science}{UCL Centre for Behavioural Data Science}} \hfill 2024--present \\
+  Lecturer, Member \\
   \textbf{\href{https://sites.duke.edu/cogneuroresearchinternship/}{Cognitive Neuroscience Research Internship}} \hfill 2022--2024 \\
   Lecturer, Research Mentor \\
-  \textbf{Duke Center for Cognitive Neuroscience} \hfill 2022 \\
+  \textbf{\href{https://dibs.duke.edu/centers/center-cognitive-neuroscience/}{Duke Center for Cognitive Neuroscience}} \hfill 2022 \\
   Graduate Representative \\
   \textbf{\href{https://dibsmethodsmeetings.github.io/}{Duke Institute for Brain Sciences Methods Meetings}} \hfill 2020--Present \\
   Founder \\
@@ -169,13 +179,15 @@
   Recruitment \\
   \textbf{\href{https://onlinelibrary.wiley.com/journal/15516709}{Cognitive Science}},
   \textbf{\href{https://www.journals.elsevier.com/cognitive-systems-research}{Cognitive Systems Research}},
+  \textbf{\href{https://link.springer.com/journal/10670}{Erkenntnis}},
   \textbf{\href{https://icml.cc}{International Conference on Machine Learning}},
   \textbf{\href{https://www.apa.org/pubs/journals/xge}{Journal of Experimental Psychology: General}},
-  \textbf{\href{https://www.springer.com/journal/13421}{Memory \& Cognition}; \href{https://www.tandfonline.com/journals/cphp20}{Philosophical Psychology}} \\
+  \textbf{\href{https://direct.mit.edu/opmi}{Open Mind}},
+  \textbf{\href{https://www.springer.com/journal/13421}{Memory \& Cognition}},
+  \textbf{\href{https://www.tandfonline.com/journals/cphp20}{Philosophical Psychology}} \\
   Ad-Hoc Reviewing \\
     
-  \line\clearpage
-  \section{Affiliations\\Past \& Present}
+  \line\section{Affiliations\\Past \& Present}
   \href{https://www.aaai.org}{Association for the Advancement of Artificial Intelligence (AAAI)} \\
   \href{https://cognitivesciencesociety.org}{Cognitive Science Society (CSS)} \\
   \href{https://www.iacap.org}{International Association of Computing and Philosophy (IACAP)} \\
@@ -191,7 +203,8 @@
       Cognitive Neuroscience \newline
       Department of Experimental Psychology\newline
       University College London\newline
-      \href{mailto:stephen.fleming@ucl.ac.uk}{stephen.fleming@ucl.ac.uk}
+      \href{mailto:stephen.fleming@ucl.ac.uk}{stephen.fleming@ucl.ac.uk}\newline
+      \url{https://metacoglab.org}
     }
     &
     
@@ -203,13 +216,15 @@
       Center for Cognitive Neuroscience\newline
       Duke University\newline
       \href{mailto:felipe.debrigard@duke.edu}{felipe.debrigard@duke.edu} \newline
-      (919) 660-3028}
+      \url{https://imclab.org}\newline
+      (919) 660-3028
+    }
     \\
 
     \vspace{\baselineskip}
     \textbf{Dr. John Pearson}\newline
     \small{
-      \emph{Assistant Professor}\newline
+      \emph{Associate Professor}\newline
       Neurobiology\newline
       Biostatistics \& Bioinformatics\newline
       Electrical and Computer Engineering\newline
@@ -217,7 +232,9 @@
       Center for Cognitive Neuroscience\newline
       Duke University\newline
       \href{mailto:john.pearson@duke.edu}{john.pearson@duke.edu}\newline
-      (919) 613-8338}
+      \url{https://pearsonlab.github.io}\newline
+      (919) 613-8338
+    }
   \end{tabular}
 \end{resume}
 \end{document}
